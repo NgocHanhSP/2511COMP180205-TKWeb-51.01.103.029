@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính lãi suất ngân hàng</title>
+</head>
+<body>
+    <script>
+        
+        function submit(){
+            let sotienvay = parseFloat(document.getElementById('tienvay').value);
+            //lãi suất
+            let laisuat = parseFloat(document.getElementById('laisuat').value);
+            //số năm
+            let sonam = parseFloat(document.getElementById('sonam').value);
+            let sotien = parseFloat();
+            sotien = sotienvay + sonam * sotienvay*laisuat/100;
+            document.getElementById('result').innerHTML = "Số tiền sau "+ sonam + " năm là: " + sotien + " triệu đồng";
+        }
+    </script>
+    <p>
+        Nhập số tiền vay (đơn vị: triệu đồng) <br>
+        <input type="text" id="tienvay" value=""><br>
+        Nhập lãi suất (đơn vị: %)<br>
+        <input type="text" id="laisuat" value=""><br>
+        Nhập số năm <br>
+        <input type="text" id="sonam" value=""><br>
+    </p>
+    <button onclick="submit()">Submit</button>
+    <p id="result"></p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Các sản phẩm</title>
+</head>
+<body>
+    <h1>Các sản phẩm</h1>
+    <div id="product_list"></div>
+    <p>
+        <button id="add" onclick="add()">Add</button>
+        <button id="edit" onclick="edit()">Edit</button>
+        <button id="delete" onclick="del()">Delete</button>
+    </p>
+    
+    <script>
+        let ds = ['Bánh', 'Sữa', 'Kem'];
+        function show(){
+            let s = '';
+            for(let i = 0; i < ds.length; i++)
+                s = s + (i+1) + ". " + ds[i] + "<br>";
+            return s;
+        }
+        function add(){
+            let newProduct= prompt("Nhập tên sản phẩm mới")
+            ds.push(newProduct);
+            document.getElementById('product_list').innerHTML = show();
+        }
+        function edit(){
+            let index = prompt("Nhập số thứ tự muốn sửa: ");
+            let newName = prompt("Nhập tên mặt hàng thay thế: ")
+            ds[index-1] = newName;
+            document.getElementById('product_list').innerHTML = show();
+        }
+        function del(){
+            let index = prompt("Nhập số thứ tự cần xóa: ");
+            ds.splice(index-1,1);
+            document.getElementById('product_list').innerHTML = show();
+        }
+        document.getElementById('product_list').innerHTML = show();
+    </script>
+</body>
+</html>

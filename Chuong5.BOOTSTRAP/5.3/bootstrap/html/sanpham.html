@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/layout.css">
+</head>
+<body>
+    <div class="container" style="height:auto">
+    <header class="hh-header">
+        <h1 class="hh-company">FIT - HCMUE Shop</h1>
+        <h5 class="hh-slogan">Bring knowledge to everyone</h5>
+        <img class="hh-logo" src="../images/logo.png"/>
+    </header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;" data-bs-theme="light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./layout.html">Trang chủ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="./sanpham.html">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Hỏi đáp</a>
+                </li>
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tài khoản
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <div class="d-flex">
+                <button class="btn" onclick="setLang('en')">English</button>
+                <button class="btn me-2" onclick="setLang('vi')">Tiếng Việt</button>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <div class="hh-sheet row">
+        <article class="col-sm-9">
+            <div class="hh-body m-auto">
+                <!-- Chi tiết sản phẩm -->
+                <div class="row">
+                    <!-- Cột trái: hình sản phẩm -->
+                    <div class="col-md-5 text-center">
+                        <img src="../images/ip14detail.webp" alt="iPhone 14 Pro MAX" class="img-fluid rounded shadow-sm" />
+                    </div>
+
+                    <!-- Cột phải: thông tin sản phẩm -->
+                    <div class="col-md-7">
+                        <h5 class="text-muted">Điện thoại</h5>
+                        <h3 class="fw-bold">iPhone 14 Pro MAX - 256GB</h3>
+                        <hr>
+                        <h4 class="text-danger">29,999,000 đ</h4>
+
+                        <div class="my-3">
+                            <input type="text" id="sl" value="1">
+                            <button class="btn btn-primary me-2">
+                                <i class="fas fa-cart-plus"></i> Thêm vào giỏ
+                            </button>
+                            <button class="btn btn-outline-danger">
+                                <i class="fas fa-heart"></i> Yêu thích
+                            </button>
+                        </div>
+
+                        <hr>
+
+                        <h5 class="mt-4">Thông tin sản phẩm</h5>
+                        <ul>
+                            <li>Màn hình: 6.7 inches, 2796 × 1290 pixels</li>
+                            <li>Hệ điều hành: iOS 16</li>
+                            <li>Công nghệ màn hình: Super Retina XDR OLED</li>
+                            <li>Camera chính: 48 MP, f/1.8, OIS</li>
+                            <li>Camera góc siêu rộng: 12 MP, f/2.2, PDAF</li>
+                            <li>Camera tele: 12 MP, f/2.8, PDAF, OIS, 3x optical zoom</li>
+                            <li>RAM: 6 GB, 256 GB</li>
+                            <li>Thẻ SIM: 2 SIM (nano-SIM và eSIM)</li>
+                            <li>Tính năng màn hình: 120Hz, Always-On display, HDR, True Tone, Hapitic Touch</li>
+                            <li>Pin: 4,323 mAh</li>
+                        </ul>
+                        <hr>
+                        <h6 class="mt-4">Chia sẻ sản phẩm:</h6>
+                        <div>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                            <a href="#" class="text-dark me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                            <a href="#" class="text-dark"><i class="fab fa-instagram fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>  
+        <aside class="col-sm-3">
+        <!-- Khối giỏ hàng -->
+        <div class="card hh-cart mb-3">
+                <div class="card-header">
+                    <i class="fas fa-shopping-cart"></i><strong>Giỏ hàng</strong>
+                </div>
+                <div class="card-body row">
+                <img class="col-md-5" src="../images/shopping-cart.jpg"/>
+                <ul class="col-md-7">
+                    <li>10sp</li>
+                    <li>5,000,000 đ</li>
+                    <li><a href="">Giỏ hàng</a></li> 
+                </ul>
+            </div>
+        </div>
+            
+        <!-- Khối tìm kiếm -->
+        <div class="card hh-card">
+            <div class="card-header">
+                <i class="fab fa-apple"></i>
+                <strong>Tìm kiếm</strong>
+            </div>
+            <div class="card-body">
+                <form>
+                    <input placeholder="Keywords" class="form-control"/>
+                </form>
+            </div>
+        </div>
+        <!-- Khối chủng loại -->
+        <div class="card hh-card">
+            <div class="card-header">
+                <i class="fas fa-list"></i>
+                <strong>Chủng loại</strong>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    Điện thoại
+                    <span class="badge badge-primary badge-pill">55</span>
+                </a>
+                <a href="#" class="list-group-item">Laptop</a>
+                <a href="#" class="list-group-item">Tablet</a>
+                <a href="#" class="list-group-item">Điều hòa</a>
+                <a href="#" class="list-group-item">Tivi</a>
+                <a href="#" class="list-group-item">Tủ lạnh</a>
+                <a href="#" class="list-group-item">Điện gia dụng</a>
+            </div>
+        </div>
+        <!-- Khối Nhà cung cấp -->
+        <div class="card hh-card">
+            <div class="card-header">
+                <i class="fas fa-list"></i>
+                <strong>Nhà cung cấp</strong>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    Apple
+                    <span class="badge badge-primary badge-pill">55</span>
+                </a>
+                <a href="#" class="list-group-item">Samsung</a>
+                <a href="#" class="list-group-item">Nokia</a>
+                <a href="#" class="list-group-item">GL</a>
+                <a href="#" class="list-group-item">Sony Ericson</a>
+                <a href="#" class="list-group-item">Dell</a>
+                <a href="#" class="list-group-item">Acer</a>
+                <a href="#" class="list-group-item">HP</a>
+                <a href="#" class="list-group-item">Toshiba</a>
+            </div>
+        </div>
+
+        <!-- Khối Hàng đặc biệt -->
+        <div class="card hh-card">
+            <div class="card-header">
+                <i class="fas fa-list"></i>
+                <strong>Hàng đặc biệt</strong>
+            </div>
+            <div class="list-group">
+                <a href="#" class="list-group-item">
+                    Hàng bán chạy
+                    <span class="badge badge-primary badge-pill">55</span>
+                </a>
+                <a href="#" class="list-group-item">Hàng mới</a>
+                <a href="#" class="list-group-item">Hàng giảm giá</a>
+                <a href="#" class="list-group-item">Hàng yêu thích</a>
+                <a href="#" class="list-group-item">Hàng xem nhiều</a>
+            </div>
+        </div>
+        </aside>
+    </div>
+    <footer class="row card">
+        <div class="card-body text-center">
+            FIT-HCMUE &copy; 2023
+        </div>
+    </footer>
+</div>
+</body>
+</html>

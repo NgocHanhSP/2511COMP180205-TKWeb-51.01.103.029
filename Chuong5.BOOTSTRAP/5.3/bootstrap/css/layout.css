@@ -1,0 +1,140 @@
+.hh-header{
+    position: relative;
+    height:170px;
+}
+.hh-logo{
+    position: absolute;
+    right: 0px;
+    width: 400px;
+}
+.hh-company{
+    font-family: Impact;
+    font-size: 35px;
+    text-shadow: 0 0 2px black;
+    position: absolute;
+    top: 45px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted gray;
+}
+.hh-slogan{
+    position:absolute;
+    top:100px;
+}
+.hh-sheet{
+    box-shadow: 0 0 5px lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    top: -10px;
+    margin-top: 20px;
+}
+.hh-body{
+    padding:5px;
+}
+.hh-cart ul{
+    padding:0px;
+    margin:0px;
+    list-style:none;
+    font-size:smaller;
+}
+.hh-cart img{
+    height:50%;
+    width:40%;
+}
+.hh-card{
+    margin:7px 0;
+}
+.hh-product{
+    text-align: center;
+    padding: 5px 2px;
+    display:inline-table;
+}
+.hh-product .card-body img{
+    height:150px;
+    max-width:95%;
+}
+
+/* Làm cho trang web tương thích mọi thiết bị */
+@media (max-width: 992px) {
+    .hh-header {
+        height: auto;
+        text-align: center;
+    }
+    .hh-company {
+        position: static;
+        border: none;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .hh-slogan {
+        position: static;
+        display: block;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .hh-logo {
+        position: static;
+        width: 80px;
+        display: block;
+        margin: 0 auto;
+    }
+    .hh-product {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hh-product {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Tăng hiệu ứng cho sản phẩm */
+.hh-product .card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hh-product .card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Định dạng icon Font Awesome */
+.hh-card i, .hh-cart i, .hh-header i {
+    color: #007bff;
+    margin-right: 5px;
+}
+
+/* Làm đẹp phần giỏ hàng */
+.hh-cart {
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+}
+.hh-cart .card-header {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Làm cho danh mục hiển thị gọn gàng */
+.list-group-item i {
+    margin-right: 8px;
+    color: #0d6efd;
+}
+
+/* trang sản phẩm */
+.hh-body img {
+  border-radius: 10px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.hh-body ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hh-body ul li::before {
+  color: #007bff;
+  font-weight: bold;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+</head>
+<body>
+    <script>
+        function caculator(c){
+            let a = parseInt(document.getElementById('first').value);
+            let b = parseInt(document.getElementById('second').value);
+            let kq = parseInt();
+            kq = 0;
+            if (c == '+'){
+                kq = a + b;
+                document.getElementById('result').innerHTML = "Result Addition: " + kq;
+            } else if (c == '-'){
+                kq = a - b;
+                document.getElementById('result').innerHTML = "Result Subtraction: " + kq;
+            } else if (c == 'X'){
+                kq = a * b;
+                document.getElementById('result').innerHTML = "Result Multiplication: " + kq;
+            } else {
+                kq = a / b;
+                document.getElementById('result').innerHTML = "Result Division: " + kq;
+            }
+                
+        }
+    </script>
+    <h1>Caculator</h1>
+    <input type="text" id="first" value="">
+    <input type="text" id="second" value="">
+    <p>
+            <button onclick="caculator(this.value)" value="+">Addition(+)</button>
+            <button onclick="caculator(this.value)" value="-">Subtraction(-)</button>
+            <button onclick="caculator(this.value)" value="X">Multiplication(X)</button>
+            <button onclick="caculator(this.value)" value="/">Division(/)</button>
+    </p>
+    <p id="result"></p>
+</body>
+</html>
