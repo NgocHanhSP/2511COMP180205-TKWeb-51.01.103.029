@@ -1,4 +1,4 @@
-/* ========== 🩵 GLOBAL (Toàn trang) ========== */
+/* ========== GLOBAL (Toàn trang) ========== */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
@@ -7,7 +7,7 @@ body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 
-/* ========== 🟣 NAVBAR ========== */
+/* ========== NAVBAR ========== */
 nav.navbar {
   background: rgba(15, 12, 41, 0.9);
   backdrop-filter: blur(8px);
@@ -47,7 +47,7 @@ nav a.nav-link:hover {
   transition: all 0.3s ease;
 }
 
-/* === 🔍 Thanh tìm kiếm === */
+/* === Thanh tìm kiếm === */
 .search-bar {
   position: relative;
   display: flex;
@@ -85,7 +85,7 @@ nav a.nav-link:hover {
   transform: scale(1.2);
 }
 
-/* ========== 💜 Giới thiệu & Avatar ========== */
+/* ========== Giới thiệu & Avatar ========== */
 .hero-section {
   padding-top: 120px;
   padding-bottom: 80px;
@@ -124,7 +124,7 @@ header p {
   font-weight: bold;
 }
 
-/* ========== 👩‍🎓 PERSONAL INFO (Phần thông tin cá nhân) ========== */
+/* ========== PERSONAL INFO ========== */
 #personal-info {
   margin-top: 50px;
   display: flex;
@@ -156,7 +156,6 @@ header p {
   transform: translateX(8px);
 }
 
-/* Nếu bạn muốn căn phải toàn bộ nội dung Personal info */
 #personal-info .row {
   justify-content: flex-end !important;
   text-align: left;
@@ -175,7 +174,7 @@ header p {
   vertical-align: middle;
 }
 
-/* ========== 🔮 FOOTER ========== */
+/* ========== FOOTER ========== */
 footer {
   text-align: center;
   padding: 30px;
@@ -184,7 +183,7 @@ footer {
   font-size: 0.9rem;
 }
 
-/* ========== 📱 RESPONSIVE ========== */
+/* ========== RESPONSIVE ========== */
 @media (max-width: 992px) {
   .navbar .nav-link {
     text-align: center;
@@ -212,8 +211,7 @@ footer {
   }
 }
 
-/* Contact */
-/* 💌 CONTACT SECTION */
+/* CONTACT */
 #contact {
   background: rgba(15, 12, 41, 0.4);
   border-radius: 20px;
@@ -249,8 +247,7 @@ footer {
   transform: translateY(-2px);
 }
 
-/* Study */
-/* ========== 📘 STUDY SECTION ========== */
+/* ========== STUDY SECTION ========== */
 #study {
   margin-top: 100px;
 }
@@ -282,7 +279,7 @@ footer {
   margin-bottom: 10px;
 }
 
-/* ========== 🕒 STUDY SCHEDULE ========== */
+/* ========== STUDY SCHEDULE ========== */
 #schedule {
   margin-top: 80px;
   background: linear-gradient(135deg, rgba(24, 20, 54, 0.9), rgba(45, 30, 80, 0.9));
@@ -342,7 +339,7 @@ footer {
   border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
-/* About */
+/* ABOUT */
 .about-body {
   background: radial-gradient(circle at top, #2a004e 0%, #000 100%);
   color: white;
@@ -406,7 +403,7 @@ footer {
 }
 
 /* PLANS */
-/* ========== 🌠 QUOTES SECTION ========== */
+/* ========== QUOTES SECTION ========== */
 #quotes h2 {
   color: #e0e0ff;
   text-shadow: 0 0 10px rgba(168,85,247,0.7);
@@ -425,7 +422,7 @@ footer {
   box-shadow: 0 0 35px rgba(168,85,247,0.5);
 }
 
-/* ========== 🎓 4-YEAR PLAN ========== */
+/* ========== 4-YEAR PLAN ========== */
 #plan-4years h2 {
   color: #fff;
   text-shadow: 0 0 12px rgba(168,85,247,0.6);
@@ -447,7 +444,7 @@ footer {
   margin-bottom: 10px;
 }
 
-/* ========== 🗓️ WEEKLY PLAN ========== */
+/* ========== WEEKLY PLAN ========== */
 #weekly-plan h2 {
   color: #fff;
   text-shadow: 0 0 12px rgba(168,85,247,0.6);

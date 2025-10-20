@@ -150,8 +150,8 @@
 /* keyframes cho chuyển động lặn lên – xuống */
 @keyframes DiverFloat {
     0%   { transform: translateY(0) scaleX(1); }
-    50%  { transform: translateY(-40px) scaleX(1); } /* đi lên */
-    100% { transform: translateY(0) scaleX(1); }     /* quay xuống */
+    50%  { transform: translateY(-40px) scaleX(1); } /* lên */
+    100% { transform: translateY(0) scaleX(1); }     /* xuống */
 }
 
 /* === NÚT ĐIỀU KHIỂN === */

@@ -209,7 +209,7 @@ audio {
   opacity: 0.8;
 }
 
-/* ========== 🎃 MEDIA QUERIES CHO LAPTOP ========== */
+/* ========== Tương thích CHO LAPTOP ========== */
 
 /* --- Laptop 13 inch (1366×768) --- */
 @media (max-width: 1400px) {
