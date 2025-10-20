@@ -1,140 +1,193 @@
-#shark{
-    left:100px;
-    top:400px;
-    position:absolute;
+/* === CÁ MẬP === */
+#shark {
+    left: 100px;
+    top: 350px;
+    position: absolute;
     animation-name: Shark;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
+    animation-direction: normal; /* chỉ đi 1 chiều, quay đầu bằng transform */
 }
-@keyframes Shark{
-    0%  {left:100px; top:400px;}
-    20% {left:300px; top:400px;}
-    40% {left:500px; top:300px;}
-    50% {left:600px; top:50px;}
-    60% {left:600px; top:100px;}
-    80% {left:500px; top:200px;}
-    100% {left:100px; top:400px; transform: scaleX(-1);}
+@keyframes Shark {
+    0%   { left: -200px; top: 350px; transform: scaleX(1); }
+    45%  { left: calc(100% + 200px); top: 300px; transform: scaleX(1); }
+    50%  { left: calc(100% + 200px); transform: scaleX(-1); }
+    95%  { left: -200px; top: 350px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
 }
 
-#turtle{
-    left:100px;
-    top:400px;
-    position:absolute;
+/* === RÙA === */
+#turtle {
+    left: 50px;
+    top: 500px;
+    position: absolute;
     animation-name: Turtle;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+    animation-duration: 60s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
-@keyframes Turtle{
-    0%  {left:100px; top:400px;}
-    20% {left:300px; top:400px;}
-    40% {left:500px; top:300px;}
-    50% {left:600px; top:50px;}
-    60% {left:600px; top:100px;}
-    80% {left:500px; top:200px;}
-    100% {left:100px; top:400px; transform: scaleX(-1);}
+@keyframes Turtle {
+    0%   { left: -150px; top: 500px; transform: scaleX(1); }
+    45%  { left: calc(100% + 150px); top: 470px; transform: scaleX(1); }
+    50%  { left: calc(100% + 150px); transform: scaleX(-1); }
+    95%  { left: -150px; top: 500px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
 }
 
-#goldFishSchool{
-    left:100px;
-    top:400px;
-    position:absolute;
+/* === ĐÀN CÁ VÀNG === */
+#goldFishSchool {
+    left: 100px;
+    top: 250px;
+    position: absolute;
     animation-name: GoldFishSchool;
     animation-duration: 10s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
-@keyframes GoldFishSchool{
-    0%  {left:100px; top:400px;}
-    20% {left:300px; top:400px;}
-    40% {left:500px; top:300px;}
-    50% {left:600px; top:50px;}
-    60% {left:600px; top:100px;}
-    80% {left:500px; top:200px;}
-    100% {left:100px; top:400px; transform: scaleX(-1);}
+@keyframes GoldFishSchool {
+    0%   { left: -100px; top: 250px; transform: scaleX(1); }
+    45%  { left: calc(100% + 100px); top: 220px; transform: scaleX(1); }
+    50%  { left: calc(100% + 100px); transform: scaleX(-1); }
+    95%  { left: -100px; top: 250px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
 }
 
-#faintSchool{
-    left:100px;
-    top:400px;
-    position:absolute;
+/* === BONG BÓNG === */
+/* Bong bóng chung */
+#faintSchool1, #faintSchool2, #faintSchool3, #faintSchool4, #faintSchool5 {
+    position: absolute;
+    bottom: 0;
     animation-name: FaintSchool;
-    animation-duration: 10s;
+    animation-duration: 6s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
-    animation-play-state: running;
-}
-@keyframes FaintSchool{
-    0%  {left:100px; top:400px;}
-    20% {left:300px; top:400px;}
-    40% {left:500px; top:300px;}
-    50% {left:600px; top:50px;}
-    60% {left:600px; top:100px;}
-    80% {left:500px; top:200px;}
-    100% {left:100px; top:400px; transform: scaleX(-1);}
 }
 
-#diver1{
-    left:100px;
-    top:400px;
-    position:absolute;
+/* Vị trí và độ trễ khác nhau để nổi lệch */
+#faintSchool1 { left: 100px; animation-delay: 0s; }
+#faintSchool2 { left: 250px; animation-delay: 2s; }
+#faintSchool3 { left: 400px; animation-delay: 4s; }
+#faintSchool4 { left: 600px; animation-delay: 1s; }
+#faintSchool5 { left: 1000px; animation-delay: 2s; }
+
+@keyframes FaintSchool {
+    0%   { transform: translateY(0); opacity: 0.3; }
+    30%  { opacity: 1; }
+    100% { transform: translateY(-500px); opacity: 0; }
+}
+
+
+/* === THỢ LẶN 1 === */
+#diver1 {
+    left: 0px;
+    top: 120px;
+    position: absolute;
     animation-name: Diver1;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+    animation-duration: 45s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
-@keyframes Diver1{
-    0%  {left:100px; top:400px;}
-    20% {left:300px; top:400px;}
-    40% {left:500px; top:300px;}
-    50% {left:600px; top:50px;}
-    60% {left:600px; top:100px;}
-    80% {left:500px; top:200px;}
-    100% {left:100px; top:400px; transform: scaleX(-1);}
+@keyframes Diver1 {
+    0%   { left: -200px; top: 120px; transform: scaleX(1); }
+    45%  { left: calc(100% + 200px); top: 400px; transform: scaleX(1); }
+    50%  { left: calc(100% + 200px); transform: scaleX(-1); }
+    95%  { left: -200px; top: 120px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
 }
 
-#diver2{
-    left:100px;
-    top:400px;
-    position:absolute;
+/* === THỢ LẶN 2 === */
+#diver2 {
+    left: 0px;
+    top: 300px;
+    position: absolute;
     animation-name: Diver2;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+    animation-duration: 35s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
-@keyframes Diver2{
-    0%  {left:100px; top:400px;}
-    20% {left:300px; top:400px;}
-    40% {left:500px; top:300px;}
-    50% {left:600px; top:50px;}
-    60% {left:600px; top:100px;}
-    80% {left:500px; top:200px;}
-    100% {left:100px; top:400px; transform: scaleX(-1);}
+@keyframes Diver2 {
+    0%   { left: -200px; top: 300px; transform: scaleX(1); }
+    45%  { left: calc(100% + 200px); top: 250px; transform: scaleX(1); }
+    50%  { left: calc(100% + 200px); transform: scaleX(-1); }
+    95%  { left: -200px; top: 300px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
 }
 
-#diver3{
-    left:100px;
-    top:400px;
-    position:absolute;
+/* === THỢ LẶN 3 === */
+#diver3 {
+    left: 0px;
+    top: 450px;
+    position: absolute;
     animation-name: Diver3;
-    animation-duration: 10s;
-    animation-timing-function: linear;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-play-state: running;
 }
-@keyframes Diver3{
-    0%  {left:100px; top:400px;}
-    20% {left:300px; top:400px;}
-    40% {left:500px; top:300px;}
-    50% {left:600px; top:50px;}
-    60% {left:600px; top:100px;}
-    80% {left:500px; top:200px;}
-    100% {left:100px; top:400px; transform: scaleX(-1);}
+@keyframes Diver3 {
+    0%   { left: -200px; top: 450px; transform: scaleX(1); }
+    45%  { left: calc(100% + 200px); top: 220px; transform: scaleX(1); }
+    50%  { left: calc(100% + 200px); transform: scaleX(-1); }
+    95%  { left: -200px; top: 450px; transform: scaleX(-1); }
+    100% { transform: scaleX(1); }
 }
 
+/* === HIỆU ỨNG LẶN LÊN – XUỐNG CHO CÁC THỢ LẶN === */
+#diver1, #diver2, #diver3 {
+    animation-name: DiverFloat, inherit;
+    animation-duration: 5s, inherit;
+    animation-timing-function: ease-in-out, inherit;
+    animation-iteration-count: infinite, inherit;
+    animation-direction: alternate, inherit;
+}
+
+/* keyframes cho chuyển động lặn lên – xuống */
+@keyframes DiverFloat {
+    0%   { transform: translateY(0) scaleX(1); }
+    50%  { transform: translateY(-40px) scaleX(1); } /* đi lên */
+    100% { transform: translateY(0) scaleX(1); }     /* quay xuống */
+}
+
+/* === NÚT ĐIỀU KHIỂN === */
+.controls {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+}
+
+.controls button {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+body {
+    height: 100vh; /* Đảm bảo body chiếm toàn màn hình */
+    margin: 0;
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; /* Giữ nền cố định khi cuộn (tuỳ chọn) */
+    transition: background-image 1s ease-in-out;
+    background-color: #001d3d; 
+    transition: background-image 1s ease-in-out, opacity 0.5s;
+}

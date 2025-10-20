@@ -1,20 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hồ cá vui nhộn</title>
-    <link rel="stylesheet" href="./mystyle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hồ cá vui nhộn</title>
+  <link rel="stylesheet" href="./mystyle.css">
 </head>
 <body>
-<div id="content">
-    <div id="shark"><img src="./images/shark.png"; width="auto" height="auto"/></div>
-    <div id="turtle"><img src="./images/turtle.png"; width="auto" height="auto"/></div>
-    <div id="goldFishSchool"><img src="./images/goldFishSchool.png"; width="auto" height="auto"/></div>
-    <div id="faintSchool"><img src="./images/faintSchool.png"; width="auto" height="auto"/></div>
-    <div id="diver1"><img src="./images/diver1.png"; width="auto" height="auto"/></div>
-    <div id="diver2"><img src="./images/diver2.png"; width="auto" height="auto"/></div>
-    <div id="diver3"><img src="./images/diver3.png"; width="auto" height="auto"/></div>
-</div>
+  <div id="content">
+    <div id="shark"><img src="./images/shark.png" width="auto" height="auto" /></div>
+    <div id="turtle"><img src="./images/turtle.png" width="auto" height="auto" /></div>
+    <div id="goldFishSchool"><img src="./images/goldFishSchool.png" width="auto" height="auto" /></div>
+    <div id="faintSchool1"><img src="./images/faintSchool.png" width="auto" height="auto" /></div>
+    <div id="faintSchool2"><img src="./images/faintSchool.png" width="auto" height="auto" /></div>
+    <div id="faintSchool3"><img src="./images/faintSchool.png" width="auto" height="auto" /></div>
+    <div id="faintSchool4"><img src="./images/faintSchool.png" width="auto" height="auto" /></div>
+    <div id="faintSchool5"><img src="./images/faintSchool.png" width="auto" height="auto" /></div>
+    <div id="diver1"><img src="./images/diver1.png" width="auto" height="auto" /></div>
+    <div id="diver2"><img src="./images/diver2.png" width="auto" height="auto" /></div>
+    <div id="diver3"><img src="./images/diver3.png" width="auto" height="auto" /></div>
+
+    <!-- === NÚT ĐỔI HÌNH NỀN & NHẠC NỀN === -->
+    <div class="controls">
+        <button id="change-bg">Đổi hình nền</button>
+        <button id="toggle-music">Bật nhạc</button>
+        <audio id="bg-music" loop>
+            <source src="./sounds/music1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+  </div>
+
+  <script>
+    // === ĐỔI HÌNH NỀN ===
+    const backgrounds = [
+      "url('images/background1.gif')",
+      "url('images/background2.gif')",
+      "url('images/background3.jpg')",
+      "url('images/background4.gif')",
+      "url('images/background5.gif')"
+    ];
+
+    let bgIndex = 0;
+    const body = document.body;
+
+    // Hiển thị nền đầu tiên khi vào trang
+    body.style.backgroundImage = backgrounds[bgIndex];
+
+    document.getElementById("change-bg").addEventListener("click", function () {
+      bgIndex = (bgIndex + 1) % backgrounds.length;
+      body.style.backgroundImage = backgrounds[bgIndex];
+    });
+
+    // === DANH SÁCH NHẠC NỀN ===
+    const musicFiles = [
+    "sounds/music1.mp3",
+    "sounds/music2.mp3",
+    "sounds/music3.mp3"
+    ];
+
+    let musicIndex = 0;
+    const music = document.getElementById("bg-music");
+    const btnMusic = document.getElementById("toggle-music");
+    let isPlaying = false;
+
+    // Nút bật / tắt nhạc
+    btnMusic.addEventListener("click", function () {
+    if (!isPlaying) {
+        music.play();
+        btnMusic.textContent = "Tắt nhạc";
+    } else {
+        music.pause();
+        btnMusic.textContent = "Bật nhạc";
+    }
+    isPlaying = !isPlaying;
+    });
+
+    // === NÚT ĐỔI NHẠC ===
+    const btnChangeMusic = document.createElement("button");
+    btnChangeMusic.textContent = "Đổi nhạc";
+    document.querySelector(".controls").appendChild(btnChangeMusic);
+
+    btnChangeMusic.addEventListener("click", function () {
+    // Dừng bài hiện tại
+    music.pause();
+    musicIndex = (musicIndex + 1) % musicFiles.length;
+    music.src = musicFiles[musicIndex];
+    if (isPlaying) {
+        music.play();
+    }
+    });
+  </script>
 </body>
 </html>
