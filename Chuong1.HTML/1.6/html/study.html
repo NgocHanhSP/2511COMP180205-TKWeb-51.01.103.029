@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phương pháp học tập - Ngọc Hạnh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- 🟣 NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-light fw-bold" href="index.html">
+        <img class="logo" src="../images/logo.png" alt="logo con cá"/> Home
+      </a>
+
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="study.html">Study</a></li>
+          <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+
+        <!-- 🔍 Search -->
+        <div class="search-bar me-3">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button id="searchToggle"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 📘 STUDY -->
+<section id="study" class="container py-5">
+  <h2 class="text-center mb-5">Study Experience</h2>
+  <div class="row g-4">
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-4 shadow-sm h-100 text-center">
+        <h5>Thiết kế Web</h5>
+        <p>Luyện tập bài tập trong sách <br> Đi học đầy đủ, nghe cô giảng</p>
+        <a href="https://www.youtube.com/watch?v=UB1O30fR-EE" 
+           target="_blank" class="btn btn-purple btn-sm">Learn More</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-4 shadow-sm h-100 text-center">
+        <h5>Cơ sở Toán trong CNTT</h5>
+        <p>Làm siêu nhiều bài tập, đa dạng<br> Đi học đầy đủ, nghe thầy giảng</p>
+        <a href="https://www.youtube.com/watch?v=VYMjJ0pTj14"
+           target="_blank" class="btn btn-purple btn-sm">Learn More</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-4 shadow-sm h-100 text-center">
+        <h5>Lập trình cơ bản</h5>
+        <p>Làm bài tập đầy đủ trên Upcoder<br> Đi học đều, chuyên cần</p>
+        <a href="https://www.youtube.com/watch?v=zOjov-2OZ0E"
+           target="_blank" class="btn btn-purple btn-sm">Learn More</a>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+      <div class="card p-4 shadow-sm h-100 text-center">
+        <h5>Toán rời rạc và ứng dụng</h5>
+        <p>Làm bài tập, xem kỹ slide cô gửi<br> Ghi chú luật, công thức, nghe giảng</p>
+        <a href="https://www.youtube.com/watch?v=8drLqQbGzUg"
+           target="_blank" class="btn btn-purple btn-sm">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🕒 WEEKLY STUDY SCHEDULE -->
+<section id="schedule" class="container py-5">
+  <h2 class="text-center mb-4">Weekly Study Schedule</h2>
+  <div class="table-responsive">
+    <table class="table table-bordered text-center align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th>Thứ</th>
+          <th>Sáng</th>
+          <th>Chiều</th>
+          <th>Tối</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Thứ 2</td>
+          <td>Thiết kế Web</td>
+          <td>Cơ sở Toán</td>
+          <td>Ôn Tiếng Anh</td>
+        </tr>
+        <tr>
+          <td>Thứ 3</td>
+          <td>Lập trình cơ bản</td>
+          <td>Toán rời rạc</td>
+          <td>CLB CNTT</td>
+        </tr>
+        <tr>
+          <td>Thứ 4</td>
+          <td>Cơ sở Toán</td>
+          <td>Thiết kế Web</td>
+          <td>Học nhóm</td>
+        </tr>
+        <tr>
+          <td>Thứ 5</td>
+          <td>Lập trình cơ bản</td>
+          <td>Tự học dự án cá nhân</td>
+          <td>Ôn bài cũ</td>
+        </tr>
+        <tr>
+          <td>Thứ 6</td>
+          <td>Toán rời rạc</td>
+          <td>Luyện đề</td>
+          <td>Thư giãn / nghe nhạc</td>
+        </tr>
+        <tr>
+          <td>Thứ 7</td>
+          <td>Ôn tổng hợp</td>
+          <td>Hoạt động ngoại khóa</td>
+          <td>Viết blog học tập</td>
+        </tr>
+        <tr>
+          <td>Chủ nhật</td>
+          <td>Nghỉ ngơi</td>
+          <td>Dọn dẹp, chuẩn bị tuần mới</td>
+          <td>Xem lại mục tiêu</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+  <!-- 🪩 FOOTER -->
+  <footer class="footer mt-5 py-3">
+    <p class="text-center m-0">&copy; 2025 Ngọc Hạnh | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // 🔍 Search toggle
+    const searchBar = document.querySelector('.search-bar');
+    const searchToggle = document.getElementById('searchToggle');
+    searchToggle.addEventListener('click', (e) => {
+      e.preventDefault();
+      searchBar.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>

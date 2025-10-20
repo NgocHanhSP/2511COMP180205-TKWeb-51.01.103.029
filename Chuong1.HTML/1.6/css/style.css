@@ -1,0 +1,486 @@
+/* ========== 🩵 GLOBAL (Toàn trang) ========== */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+  color: #f8f9fa;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* ========== 🟣 NAVBAR ========== */
+nav.navbar {
+  background: rgba(15, 12, 41, 0.9);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 15px rgba(168, 85, 247, 0.25);
+  padding: 0.7rem 1rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  color: #e0e0ff !important;
+}
+
+nav a.nav-link {
+  color: #e0e0ff !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: 0.3s;
+}
+nav a.nav-link:hover {
+  color: #a855f7 !important;
+  transform: translateY(-2px);
+}
+
+.nav-link.active {
+  color: #a855f7 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #a855f7;
+  transition: all 0.3s ease;
+}
+
+/* === 🔍 Thanh tìm kiếm === */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-bar input {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #a855f7;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 0 40px 0 15px;
+  transition: all 0.4s ease;
+}
+.search-bar input:focus {
+  border-radius: 25px;
+  width: 220px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+}
+.search-bar button {
+  position: absolute;
+  right: 8px;
+  top: 6px;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.search-bar button:hover {
+  transform: scale(1.2);
+}
+
+/* ========== 💜 Giới thiệu & Avatar ========== */
+.hero-section {
+  padding-top: 120px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.avatar-img {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  border: 5px solid #a855f7;
+  box-shadow: 0 0 35px rgba(168, 85, 247, 0.6);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.avatar-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 45px rgba(168, 85, 247, 0.9);
+}
+
+header h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #e0e0ff;
+}
+header p {
+  color: #c7c7e9;
+}
+.highlight {
+  color: #a855f7;
+  font-weight: bold;
+}
+
+/* ========== 👩‍🎓 PERSONAL INFO (Phần thông tin cá nhân) ========== */
+#personal-info {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+#personal-info h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#personal-info .list-group {
+  background: transparent;
+}
+
+#personal-info .list-group-item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 10px;
+  margin-bottom: 12px;
+  padding: 12px 18px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+#personal-info .list-group-item:hover {
+  background: rgba(168, 85, 247, 0.15);
+  transform: translateX(8px);
+}
+
+/* Nếu bạn muốn căn phải toàn bộ nội dung Personal info */
+#personal-info .row {
+  justify-content: flex-end !important;
+  text-align: left;
+}
+
+.info-box li {
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+.info-box li:hover {
+  transform: translateX(5px);
+  color: #a855f7;
+}
+.info-box i {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* ========== 🔮 FOOTER ========== */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0f0c29;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+/* ========== 📱 RESPONSIVE ========== */
+@media (max-width: 992px) {
+  .navbar .nav-link {
+    text-align: center;
+  }
+  .search-bar input:focus {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #personal-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .avatar-img {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* Contact */
+/* 💌 CONTACT SECTION */
+#contact {
+  background: rgba(15, 12, 41, 0.4);
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(168, 85, 247, 0.3);
+  padding: 60px 40px;
+}
+
+#contact h4 {
+  font-weight: 600;
+}
+
+#contact .form-control {
+  background: rgba(255,255,255,0.1);
+  border: 1px solid #a855f7;
+  color: #fff;
+}
+
+#contact .form-control:focus {
+  box-shadow: 0 0 10px #a855f7;
+  background: rgba(255,255,255,0.2);
+}
+
+.btn-purple {
+  background-color: #a855f7;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+  background-color: #9333ea;
+  transform: translateY(-2px);
+}
+
+/* Study */
+/* ========== 📘 STUDY SECTION ========== */
+#study {
+  margin-top: 100px;
+}
+
+#study h2 {
+  font-weight: 700;
+  color: #e0e0ff;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+}
+
+#study .card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  border-radius: 15px;
+  color: #fff;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+#study .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  background: rgba(168, 85, 247, 0.15);
+}
+
+#study h5 {
+  color: #a855f7;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ========== 🕒 STUDY SCHEDULE ========== */
+#schedule {
+  margin-top: 80px;
+  background: linear-gradient(135deg, rgba(24, 20, 54, 0.9), rgba(45, 30, 80, 0.9));
+  border-radius: 20px;
+  padding: 50px 40px;
+  box-shadow: 0 0 30px rgba(168, 85, 247, 0.3);
+}
+
+#schedule h2 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+  margin-bottom: 30px;
+}
+
+/* Bảng chính */
+#schedule table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Hàng tiêu đề */
+#schedule thead {
+  background: linear-gradient(90deg, #9333ea, #a855f7);
+  color: #fff;
+}
+
+#schedule th {
+  padding: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+/* Ô dữ liệu */
+#schedule td {
+  padding: 12px;
+  color: #f0f0ff;
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+/* Hover hàng */
+#schedule tr:hover td {
+  background: rgba(168, 85, 247, 0.25);
+  transform: scale(1.01);
+}
+
+/* Viền bo và hiệu ứng sáng nhẹ */
+#schedule table {
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* About */
+.about-body {
+  background: radial-gradient(circle at top, #2a004e 0%, #000 100%);
+  color: white;
+}
+
+/* === BANNER === */
+.banner-section img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-item.active img {
+  transition: transform 0.5s ease;
+}
+
+/* === BOOK CARD === */
+.book-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  transition: transform 0.3s, background 0.3s;
+  color:white;
+}
+.book-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.book-card img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+/* === MUSIC === */
+.video-container {
+  display: flex;
+  justify-content: center;
+}
+.video-container iframe {
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(255, 0, 200, 0.4);
+}
+
+/* === ANIME SLIDER === */
+.anime-slider .carousel-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  transition: transform 0.5s ease;
+}
+.anime-slider img {
+  height: 300px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(255, 100, 255, 0.3);
+}
+.anime-slider h4 {
+  color: #ffbdf7;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+/* PLANS */
+/* ========== 🌠 QUOTES SECTION ========== */
+#quotes h2 {
+  color: #e0e0ff;
+  text-shadow: 0 0 10px rgba(168,85,247,0.7);
+  margin-top:8%;
+}
+.quote-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 5px solid #a855f7;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(168,85,247,0.3);
+  color: #e8e8ff;
+  transition: transform 0.3s ease;
+}
+.quote-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 35px rgba(168,85,247,0.5);
+}
+
+/* ========== 🎓 4-YEAR PLAN ========== */
+#plan-4years h2 {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(168,85,247,0.6);
+}
+.year-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(168,85,247,0.3);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+.year-card:hover {
+  transform: translateY(-8px);
+  background: rgba(168,85,247,0.15);
+  box-shadow: 0 0 20px rgba(168,85,247,0.4);
+}
+.year-card h4 {
+  color: #a855f7;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ========== 🗓️ WEEKLY PLAN ========== */
+#weekly-plan h2 {
+  color: #fff;
+  text-shadow: 0 0 12px rgba(168,85,247,0.6);
+}
+
+.timeline {
+  position: relative;
+  margin-left: 20px;
+  border-left: 3px solid #a855f7;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+  position: relative;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 5px;
+  width: 15px;
+  height: 15px;
+  background-color: #a855f7;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(168,85,247,0.7);
+}
+.timeline-item h5 {
+  color: #a855f7;
+  font-weight: 600;
+}
+.timeline-item p {
+  color: #e0e0ff;
+  margin-top: 8px;
+  line-height: 1.6;
+}

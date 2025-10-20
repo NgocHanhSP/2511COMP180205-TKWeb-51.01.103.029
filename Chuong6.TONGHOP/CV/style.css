@@ -1,11 +1,11 @@
-:root{
+:root {
     --accent: #ff92be; 
-    --dark: #0b0b0b;
+    --dark: #000000;
     --muted: #6c6c6c;
 }
 
 body {
-    background: #f7f7f7;
+    background: #605960;
     font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial;
     color: #111;
     padding: 32px 12px;
@@ -21,24 +21,31 @@ body {
 }
 
 .left-panel {
-    background: linear-gradient(180deg, var(--accent) 0%, #ff68a8 100%);
+    background: linear-gradient(180deg, var(--accent) 0%, #ff7ab1 100%);
     color: white;
     padding: 36px 24px;
     min-height: 100%;
 }
 
+/* ==== ẢNH ĐẠI DIỆN (TO HƠN + HIỆU ỨNG ĐẸP) ==== */
 .profile-img {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid rgba(255,255,255,0.18);
-    display: block;
-    margin: 0 auto 18px auto;
+    border: 4px solid rgba(255,255,255,0.4);
     object-fit: cover;
-    background: #fff;
+    display: block;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.profile-img:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 15px rgba(255,255,255,0.4);
+}
+
+/* ==== TÊN & THÔNG TIN ==== */
 .name-block {
     background: var(--dark);
     color: white;
@@ -57,11 +64,21 @@ body {
     font-size: 14px;
 }
 
+/* ==== DANH MỤC ==== */
 .section-title {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.6px;
     margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.section-title i {
+    color: var(--accent);
+    font-size: 1.1rem;
+    vertical-align: middle;
 }
 
 .contact-item {
@@ -72,17 +89,49 @@ body {
     color: rgba(255,255,255,0.95);
 }
 
-.skill-dot {
-    display:inline-block;
-    width:10px;height:10px;border-radius:50%;
-    background: rgba(255,255,255,0.22); margin-right:6px;
-}
-.skill-dot.filled { background: white; }
-
 .line {
-    height:1px;background: rgba(255,255,255,0.15); margin:14px 0 18px;
+    height:1px;
+    background: rgba(255,255,255,0.15);
+    margin:14px 0 18px;
 }
 
+/* ==== THANH KỸ NĂNG ==== */
+.skill-bar {
+    width: 100%;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.skill-fill {
+    height: 100%;
+    background: #fff; 
+    border-radius: 4px 0 0 4px;
+    width: 0;
+    animation: growSkill 1.5s ease forwards;
+}
+
+@keyframes growSkill {
+    from { width: 0; }
+    to { width: var(--target-width); }
+}
+
+.skill-fill[style] {
+    animation: none;
+}
+
+.skill-fill::after {
+    content: "";
+    display: block;
+    height: 100%;
+    background: #fff;
+    animation: none;
+}
+
+/* ==== NỘI DUNG CHÍNH ==== */
 .content {
     padding: 28px 36px;
 }
@@ -96,21 +145,49 @@ body {
     color: #222;
 }
 
-.job-meta { color: var(--muted); font-size: 13px; margin-bottom:6px; }
-
-.edu-timeline { list-style:none; padding-left:0; margin: 0; }
-.edu-timeline li { margin-bottom:12px; padding-left: 18px; position: relative; color:#222; }
-.edu-timeline li::before {
-    content: "";
-    width:8px;height:8px;border-radius:50%;
-    background: var(--accent);
-    position:absolute; left:0; top:6px;
+.job-meta { 
+    color: var(--muted); 
+    font-size: 13px; 
+    margin-bottom:6px; 
 }
 
-/* responsive tweaks */
+/* ==== HỌC VẤN ==== */
+.edu-timeline { 
+    list-style:none; 
+    padding-left:0; 
+    margin: 0; 
+}
+.edu-timeline li { 
+    margin-bottom:12px; 
+    padding-left: 18px; 
+    position: relative; 
+    color:#222; 
+}
+.edu-timeline li::before {
+    content: "";
+    width:8px;
+    height:8px;
+    border-radius:50%;
+    background: var(--accent);
+    position:absolute; 
+    left:0; 
+    top:6px;
+}
+
+/* ==== NGƯỜI THAM CHIẾU ==== */
+.ref-item {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+.ref-item + .ref-item {
+    margin-top: 8px;
+}
+
+/* ==== RESPONSIVE ==== */
 @media (max-width: 767.98px) {
     .left-panel { padding: 22px 18px; }
     .name-block { padding: 18px 20px; }
     .content { padding: 18px 20px; }
-    .profile-img { width:100px; height:100px; }
+    .profile-img { width: 120px; height: 120px; }
 }

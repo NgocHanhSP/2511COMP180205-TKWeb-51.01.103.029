@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Ngọc Hạnh</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="about-page">
+
+  <!-- 🟣 NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand text-light fw-bold" href="index.html">
+        <img class="logo" src="../images/logo.png" alt="logo con cá"/> Home
+      </a>
+
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="study.html">Study</a></li>
+          <li class="nav-item"><a class="nav-link" href="plans.html">Plans</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+        <!-- 🔍 Search -->
+        <div class="search-bar me-3">
+          <input type="text" id="searchInput" placeholder="Search..." />
+          <button id="searchToggle"><i class="bi bi-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🎞 ANIME SLIDER -->
+  <section class="banner-section mt-5 pt-5">
+    <div id="animeCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner rounded-4 shadow-lg">
+        <div class="carousel-item active">
+          <img src="../images/anime1.jpg" class="d-block w-100" alt="Anime 1">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/anime2.jpg" class="d-block w-100" alt="Anime 2">
+        </div>
+        <div class="carousel-item">
+          <img src="../images/anime3.jpg" class="d-block w-100" alt="Anime 3">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 📚 SÁCH ĐỌC -->
+  <section class="container mt-5">
+    <h2 class="text-center mb-4 text-light">📚 Sách tôi yêu thích</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card book-card">
+          <img src="../images/book1.jpg" class="card-img-top" alt="Tiểu thuyết">
+          <div class="card-body">
+            <h5 class="card-title">Tiểu thuyết</h5>
+            <p class="card-text">“Nhà giả kim”, “Tuổi trẻ đáng giá bao nhiêu”, “Mắt biếc”</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card book-card">
+          <img src="../images/book2.jpg" class="card-img-top" alt="Tâm lý học">
+          <div class="card-body">
+            <h5 class="card-title">Tâm lý học</h5>
+            <p class="card-text">“Đắc nhân tâm”, “Tâm lý học hành vi”, “Bạn đắt giá bao nhiêu”</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card book-card">
+          <img src="../images/book3.jpg" class="card-img-top" alt="Trinh thám">
+          <div class="card-body">
+            <h5 class="card-title">Trinh thám</h5>
+            <p class="card-text">“Sherlock Holmes”, “Death Note”, “Bí mật Tokyo”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎬 ANIME SLIDER -->
+<section class="anime-slider container mt-5 text-light">
+  <h2 class="text-center mb-4">🎬 Anime yêu thích</h2>
+
+  <div id="animeFavCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner rounded-4 shadow-lg">
+
+      <!-- 🌟 Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row align-items-center p-4">
+          <div class="col-md-5">
+            <img src="../images/poster1.jpg" class="img-fluid rounded-4" alt="Demon Slayer">
+          </div>
+          <div class="col-md-7">
+            <h4>Demon Slayer (Kimetsu no Yaiba)</h4>
+            <p>Bộ anime mình cực thích vì hình ảnh đẹp, âm nhạc cuốn, và nhân vật sâu sắc. 
+              Câu chuyện về nghị lực và tình cảm gia đình truyền cảm hứng rất nhiều 💜.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🌟 Slide 2 -->
+      <div class="carousel-item">
+        <div class="row align-items-center p-4">
+          <div class="col-md-5">
+            <img src="../images/poster2.jpg" class="img-fluid rounded-4" alt="Your Name">
+          </div>
+          <div class="col-md-7">
+            <h4>Your Name (Kimi no Na wa)</h4>
+            <p>Một câu chuyện vừa buồn vừa đẹp về định mệnh, ký ức và cảm xúc tuổi trẻ. 
+              Mình đặc biệt thích nhạc phim do RADWIMPS thể hiện 🎶.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 🌟 Slide 3 -->
+      <div class="carousel-item">
+        <div class="row align-items-center p-4">
+          <div class="col-md-5">
+            <img src="../images/poster3.jpg" class="img-fluid rounded-4" alt="Jujutsu Kaisen">
+          </div>
+          <div class="col-md-7">
+            <h4>Jujutsu Kaisen</h4>
+            <p>Một anime hành động mãn nhãn, nhân vật cá tính và cốt truyện rất cuốn. 
+              Đặc biệt là Gojo-sensei — quá ngầu 😎!</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 🔄 Nút chuyển -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#animeFavCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#animeFavCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+  <!-- 🎵 NHẠC -->
+  <section class="music-section mt-5">
+    <h2 class="text-center mb-4 text-light">🎵 Nhạc yêu thích</h2>
+    <div class="video-container">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/KaohUQ2gloo"
+        title="Playlist Nhạc Chill Này Là Để Vẽ Vời"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- 💖 TÍNH CÁCH -->
+  <section class="container text-light mt-5 pb-5">
+    <h2 class="text-center mb-4">💖 Sở thích & Tính cách</h2>
+    <p class="text-center fs-5">Mình thích những thứ dễ thương, màu hồng, và mọi thứ nhẹ nhàng.  
+      Là một người hướng nội part-time, sống đơn giản —  
+      <strong>“Cá bơi giữa đời”</strong>
+    </p>
+  </section>
+
+  <!-- 🪩 FOOTER -->
+  <footer class="footer py-3">
+    <p class="text-center m-0">&copy; 2025 Ngọc Hạnh | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
