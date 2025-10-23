@@ -181,7 +181,7 @@
 }
 
 body {
-    height: 100vh; /* Đảm bảo body chiếm toàn màn hình */
+    height: 100vh; 
     margin: 0;
     background-size: cover; 
     background-position: center center; 

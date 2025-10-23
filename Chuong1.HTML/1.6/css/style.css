@@ -1,4 +1,4 @@
-/* ========== GLOBAL (Toàn trang) ========== */
+/* ========== Toàn trang ========== */
 body {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
@@ -107,7 +107,7 @@ nav a.nav-link:hover {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .avatar-img:hover {
-  transform: scale(1.05);
+  transform: scale(2.05);
   box-shadow: 0 0 45px rgba(168, 85, 247, 0.9);
 }
 

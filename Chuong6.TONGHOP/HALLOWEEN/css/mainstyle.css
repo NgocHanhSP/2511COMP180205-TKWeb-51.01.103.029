@@ -146,9 +146,9 @@ body::before {
 
 /* ********** CẤU TRÚC TIMELINE ********** */
 .timeline-container {
-    padding: 80px 0 50px 0; /* thêm khoảng cách phía trên để không dính nav */
+    padding: 80px 0 50px 0; 
     position: relative;
-    background: #000; /* nền tối để ảnh nổi bật */
+    background: #000; 
     overflow: hidden; /* tránh ảnh hoặc line tràn ra ngoài */
 }
 
@@ -227,7 +227,7 @@ body::before {
 .timeline-image-floating {
     position: absolute;
     top: 10px;
-    right: -400px; /* giảm để không tràn khỏi viewport */
+    right: -400px; 
     width: 340px;
     height: 180px;
     border: 3px solid #ff9900;
